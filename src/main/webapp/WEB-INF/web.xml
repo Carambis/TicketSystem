@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee">
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <display-name>Controller</display-name>
+    <servlet-name>Controller</servlet-name>
+    <servlet-class>by.tc.web.controller.Controller</servlet-class>
+  </servlet>
+
+  <servlet>
+    <display-name>ImageController</display-name>
+    <servlet-name>ImageController</servlet-name>
+    <servlet-class>by.tc.web.controller.ImageController</servlet-class>
+  </servlet>
+
+  <filter>
+    <filter-name>FilterPath</filter-name>
+    <filter-class>by.tc.web.controller.filter.FilterPath</filter-class>
+  </filter>
+
+  <filter>
+    <filter-name>LanguageFilter</filter-name>
+    <filter-class>by.tc.web.controller.filter.LanguageFilter</filter-class>
+  </filter>
+
+  <filter>
+    <filter-name>CharsetFilter</filter-name>
+    <filter-class>by.tc.web.controller.filter.CharsetFilter</filter-class>
+    <init-param>
+      <param-name>characterEncoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+
+  <servlet-mapping>
+    <servlet-name>ImageController</servlet-name>
+    <url-pattern>/image</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/Controller</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/films</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/adminMenu</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/film</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/editUser</url-pattern>
+  </servlet-mapping>
+
+  <filter-mapping>
+    <filter-name>FilterPath</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>LanguageFilter</filter-name>
+    <url-pattern>/home</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>CharsetFilter</filter-name>
+    <url-pattern>/home</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>CharsetFilter</filter-name>
+    <url-pattern>/adminMenu</url-pattern>
+  </filter-mapping>
+</web-app>

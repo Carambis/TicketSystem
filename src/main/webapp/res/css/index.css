@@ -1,0 +1,79 @@
+body{
+    font-size:12px;
+}
+
+.locgroup{
+    float: right;
+    margin-right: 10%;
+}
+
+@media (min-width:768px){
+    .locgroup{
+        width:auto;
+    }
+}
+.locbutton{
+    width: 2.6%;
+    padding: 0;
+    margin-right: 30px;
+    height: 25px;
+}
+.wideScreenImg img{
+    width:100%;
+    height: auto;
+    max-height: 500px;
+}
+
+.shift{
+    margin-bottom: 20px;
+}
+
+.carousel-inner .item img{
+    width:100%;
+    height: auto;
+    max-height: 500px;
+}
+
+.posterimg{
+    width:125px;
+    height:200px;
+}
+
+.tableinfo{
+    font-size:80%;
+}
+
+.error input .form-control, .error textarea {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    display: none;
+}
+
+.error-servlet{
+    color:red;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+.btn-search{
+    padding-top: 23%;
+    padding-bottom: 23%;
+}
+
+.search-gr{
+    margin: 4% 6% 0;
+}
+
+.navbar-inverse .btn-link{
+    float: right;
+    color: #000000;
+}
+
+.navbar-inverse .btn-link:hover,.navbar-inverse .btn-link:focus{
+    color: #1b6d85;
+}
